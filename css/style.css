@@ -1,0 +1,198 @@
+body{
+  width: 100%;
+  background: linear-gradient(90deg, #08424d 50%, black 50%);
+  font-family: 'Orbitron', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .jumbotron h1{
+   color:white;
+ }
+}
+
+.jumbotron{
+    letter-spacing: 4px;      
+    font-size: 20px;
+    color: rgb(0, 251, 251);
+    background: inherit;
+
+  }
+  .main3{
+    font-family: 'Teko', sans-serif;
+    height: 100%;
+    color: rgb(0, 251, 251);
+  }
+
+  .main2{
+height: 400px;
+  }
+
+  .main4{
+    height: 400px;
+    background-image: url("../images/bag1.png");
+  }
+
+  .container {
+    margin-top: 4rem;
+    padding-top:50px;
+    padding-bottom:50px; 
+  }
+ 
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #000000;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 2px;
+    opacity: 0.9;
+
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: rgb(0, 251, 251) !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #08424d !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: rgb(0, 251, 251) !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+#noticeInfo{
+  color: black;
+  font-size: larger;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .thumbnail{
+    width: 200px !important;
+    height: 150px;
+  }
+  
+  .img-1 {
+    width: 200px !important;
+    height: 250px;
+  }
+  .img-2{
+    width: 200px !important;
+    height: 400px;
+  }
+  .rapid{
+    width: 200px;
+    height: 200px;
+  }
+  .logo{
+    width: 40px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(0, 251, 251); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 251, 251); }
+}
+}
+.rapid{
+  padding: 0%;
+  margin: 0%;
+}
+
+#showMe5 {
+  animation: cssAnimation 0s 5s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+.thumbnail{
+  width: 300px;
+  height: 200px;
+}
+
+.img-1 {
+  width: 400px;
+  height: 500px;
+}
+.img-2{
+  height: 400px;
+}
+
+.max h1{
+  font-size: 75px!important;
+}
