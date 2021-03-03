@@ -3,25 +3,25 @@ body{
   background: linear-gradient(90deg, #08424d 50%, black 50%);
   font-family: 'Orbitron', sans-serif;
 }
+@media only screen and (max-width: 600px) {
+  .jumbotron h1{
+   color:white;
+ }
+}
 
 .jumbotron{
     letter-spacing: 4px;      
     font-size: 20px;
     color: rgb(0, 251, 251);
     background: inherit;
-      margin-top: 40px;
+
   }
   .main3{
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Teko', sans-serif;
     height: 100%;
     color: rgb(0, 251, 251);
-    margin-bottom: 10px;
-    margin-top: 50px;
   }
 
-  .main3 h1{
-    font-family: 'Hind', sans-serif;
-  }
   .main2{
 height: 400px;
   }
@@ -29,6 +29,12 @@ height: 400px;
   .main4{
     height: 400px;
     background-image: url("../images/bag1.png");
+  }
+
+  .container {
+    margin-top: 4rem;
+    padding-top:50px;
+    padding-bottom:50px; 
   }
  
   .btn {
@@ -57,14 +63,14 @@ height: 400px;
     filter: grayscale(100%);
   }  
   .navbar {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Montserrat, sans-serif;
     margin-bottom: 0;
     background-color: #000000;
     border: 0;
-    font-size: 12px;
+    font-size: 11px !important;
     letter-spacing: 2px;
     opacity: 0.9;
-    
+
   }
   .navbar li a, .navbar .navbar-brand { 
     color: rgb(0, 251, 251) !important;
@@ -114,23 +120,26 @@ height: 400px;
 }
 
 @media only screen and (max-width: 600px) {
-  .thumbnail2{
-    width: 250px !important ;
-    height: 100px !important;
-    align-items: center;
+  .thumbnail{
+    width: 200px !important;
+    height: 150px;
   }
-
-  .rapid{
-    width: 250px;
+  
+  .img-1 {
+    width: 200px !important;
     height: 250px;
+  }
+  .img-2{
+    width: 200px !important;
+    height: 400px;
+  }
+  .rapid{
+    width: 200px;
+    height: 200px;
   }
   .logo{
     width: 40px;
   }
-  .mail{
-    font-size: 16px;
-  }
-  
 }
 
 @media only screen and (min-width: 600px) {
@@ -171,7 +180,17 @@ height: 400px;
   to   { visibility: visible; }
 }
 
+.thumbnail{
+  width: 300px;
+  height: 200px;
+  border: 0 none;
+  box-shadow: 0 none;
+}
 
+.img-1 {
+  width: 400px;
+  height: 500px;
+}
 .img-2{
   height: 400px;
 }
@@ -180,36 +199,53 @@ height: 400px;
   font-size: 75px!important;
 }
 
-.col-md-4 .col-md-6{  
+@import "compass/css3";
+
+* {
+  @include box-sizing(border-box); 
+}
+
+section {
+  background: #eee;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
   overflow: hidden;
 }
 
-.thumbnail1 {
-  transition: 0.3s;
-  width: 400px;
-  height: 300px;
+.module {
+  width: 48%;
+  min-height: 200px;
+  background: white;
+  position: relative;
+  float: left;
+  padding: 20px;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  box-shadow: 0 1px 3px rgba(black, 0.2);
 }
 
-.thumbnail1:hover {
-  transform: scale(1.1);
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/blurry-blue.jpg);
+  background-size: cover;
+  padding: 30px;
+}
+ 
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
 }
 
-.thumbnail2, .img-2 {
-  transition: 0.3s;
-}
-
-.thumbnail2:hover, .img-2:hover {
-  transform: scale(1.1);
-}
-/* Other styling elements, that are not necessary for the example */
-
-.carousel-control{
-  color: rgb(0, 251, 251);
-  font-weight: bolder;
-  size: 100px;
-}
-
-.thumbnail2{
-  width: 350px;
-  height: 200px;
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
