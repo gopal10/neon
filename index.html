@@ -33,11 +33,51 @@
     });
 
 
-    jQuery(document).ready(function(){
-    function resizeForm(){
-        var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
-        if(width > 1024){
-          $(window).on("load",function() {
+//     jQuery(document).ready(function(){
+//     function resizeForm(){
+//         var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+//         if(width > 1024){
+//           $(window).on("load",function() {
+//   $(window).scroll(function() {
+//     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+//     $(".fade").each(function() {
+//       /* Check the location of each desired element */
+//       var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+//       /* If the element is completely within bounds of the window, fade it in */
+//       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+//         if ($(this).css("opacity")==0) {$(this).addClass("slide1");}
+//       }
+//     });
+//   }).scroll(); //invoke scroll-handler on page-load
+// });
+//         } else {
+
+//         }    
+//     }
+//     window.onresize = resizeForm;
+//     resizeForm();
+// });
+
+
+
+//   $(window).on("load",function() {
+//   $(window).scroll(function() {
+//     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+//     $(".fade").each(function() {
+//       /* Check the location of each desired element */
+//       var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+//       /* If the element is completely within bounds of the window, fade it in */
+//       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+//         if ($(this).css("opacity")==0) {$(this).addClass("slide1");}
+//       }
+//     });
+//   }).scroll(); //invoke scroll-handler on page-load
+// });
+  
+
+    $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".fade").each(function() {
@@ -51,17 +91,8 @@
     });
   }).scroll(); //invoke scroll-handler on page-load
 });
-        } else {
-
-        }    
-    }
-    window.onresize = resizeForm;
-    resizeForm();
-});
 
 
-  
-  
 
   </script>
 </head>
@@ -130,17 +161,16 @@
       <br><br><br>
       <img src="images/a.png" alt="" width="100px">
     </div>
-    <br><br>
 
   </div>
-  <div class="text-center">
-    <div class="container-fluid main3 fade">
+
+    <div class="container-fluid main3 text-center">
       <div class="col-md-6 main2">
         <h1> Who we are?</h1>
         <br>
 
 
-        <h3>We are first of its kind – design thinking oriented
+        <h3 class="fade">We are first of its kind – design thinking oriented
           “Research & Development company”
           <br>
           <br>
@@ -155,7 +185,7 @@
         <br>
         <br>
       </div>
-      <div class="col-md-6 main4">
+      <div class="col-md-6 main4 fade">
         <h1>Our expertise grow in concept design-> rapid prototype-> design for manufacturing
 
           “We talk in terms of days and not months”
@@ -164,31 +194,30 @@
 
       </div>
     </div>
-    <br>
 
-    <div class="container-fluid main3 fade">
+    <div class="container-fluid main3">
       <div class="text-center">
         <h1>Our Philosophy</span></h1>
       </div>
 
-      <div class="col-md-6 main2">
+      <div class="col-md-6 main2 fade">
         <br><br><br>
         <h3>Recognised as startup by DPIIT working in the field of green technologies and clean tech</h3>
       </div>
-      <div class="col-md-6"> <img src="images/1.png" alt="" class="phil" ></div>
+      <div class="col-md-6 fade"> <img src="images/1.png" alt="" class="phil" ></div>
     </div>
-  </div>
-  <div class="container-fluid main3 fade">
+  
+  <div class="container-fluid main3">
     <div class="text-center">
       <h1><span>A creative blend of design,engineering & prototyping
       </h1>
     </div>
 
-    <div class="col-md-6 text-center">
+    <div class="col-md-6 text-center" >
       <br><br><br>
       <h1>What we do?
       </h1>
-      <h3> We Support start-ups, SMEs & MSMEs in developing home grown products and solutions from point zero to
+      <h3 class="fade"> We Support start-ups, SMEs & MSMEs in developing home grown products and solutions from point zero to
         prototype
       </h3>
       <br>
@@ -196,7 +225,7 @@
       <br>
       <h3>We provide our expertise in preparation for mass production from MVP stage</h3>
     </div>
-    <div class="col-md-6" style="background-image: url('images/bag3.jpg');">
+    <div class="col-md-6 fade" style="background-image: url('images/bag3.jpg');">
       <h3>
         <ul>
           <li>Concept sketches</li>
@@ -248,17 +277,17 @@
 
 
   </div>
-  <br><br><br>
 
-  <div class="container-fluid main3 fade text-center" id="why">
+
+  <div class="container-fluid main3  text-center" id="why">
     <div class="col-md-6 main2">
 
       <h1>Why us?
       </h1>
-      <h3>Our team of ideators, designers, engineers and manufacturing experts under one roof can help to build up
+      <h3 class="fade">Our team of ideators, designers, engineers and manufacturing experts under one roof can help to build up
         product from design to MVP locally in Bharat under make in India initiative.</h3>
     </div>
-    <div class="col-md-6 main2">
+    <div class="col-md-6 main2 fade">
       <h3>A Dedicated design team, Technology infrastructure, Prototyping knowledge and Fabrication experience is
         essential for developing a product of your own which takes time, money and effort to develop. Untill you are
         ready with above, we fill the gap by helping out and support at minimal prices <br>
@@ -271,10 +300,7 @@
   </div>
   </div>
 
-  <br>
-  <br>
-
-  <div class="container-fluid main3 fade myclass"  id="3d">
+  <div class="container-fluid main3 myclass"  id="3d">
 
     <div class="text-center">
       <h1>3D PRINTING</h1>
@@ -291,18 +317,18 @@
       <div class="carousel-inner">
         <div class="item active">
     <div class="col-md-4">
-      <img src="images/000036.jpg" class="thumbnail1" alt="">
+      <img src="images/000036.jpg" class="thumbnail1 fade" alt="">
       <h3 class="caption"> 1:1 scale | printing time: 65 hrs
         Total parts: 21
       </h3>
     </div>
 
       <div class="col-md-4">
-        <img src="images/000020.jpg" class="thumbnail1" alt="">
+        <img src="images/000020.jpg" class="thumbnail1 fade" alt="">
       </div>
 
       <div class="col-md-4">
-        <img src="images/000016.jpg" class="thumbnail1" alt="">
+        <img src="images/000016.jpg" class="thumbnail1 fade" alt="">
       </div>
       <h3>1:25 scale Size 150 mm x 150 mm
         Total parts: 26 | total time: 12 hrs</h3>
@@ -310,7 +336,7 @@
   <div class="item">
 
     <div class="col-md-4">
-      <img src="images/000005.jpg" class="thumbnail1" alt="">
+      <img src="images/000005.jpg" class="thumbnail1 fade" alt="">
       <h3 class="caption"> <br>
         1:1 scale | Size 350 mm x 320 mm
       </h3>
@@ -330,7 +356,7 @@
     </div>
 
     <div class="col-md-4">
-      <img src="images/Picture1.jpg" class="thumbnail1" alt="">
+      <img src="images/Picture1.jpg" class="thumbnail1 fade" alt="">
       <h3 class="caption"> 1:1 scale
         Size 400 mm x 200mm
 
@@ -353,7 +379,7 @@
 </div>
 
   </div>
-  <div class="container-fluid main3 fade text-center myclass" id="product">
+  <div class="container-fluid main3 text-center myclass" id="product">
 
     <div class="text-center">
       <h1>PRODUCT DESIGN</h1>
@@ -376,15 +402,15 @@
       <div class="col-md-4">
         
 
-        <img src="images/000000.png" class="thumbnail1" alt="">
+        <img src="images/000000.png" class="thumbnail1 fade" alt="">
       </div>
   
         <div class="col-md-4">
-          <img src="images/000034.png" class="thumbnail1" alt="">
+          <img src="images/000034.png" class="thumbnail1 fade" alt="">
         </div>
   
         <div class="col-md-4">
-          <img src="images/000011.jpg" class="thumbnail1" alt="">
+          <img src="images/000011.jpg" class="thumbnail1 fade" alt="">
         </div>
         
   </div>
@@ -392,17 +418,17 @@
       <h3>Concept design
       </h3>
       <div class="col-md-4">
-        <img src="images/000044.png" class="thumbnail1" alt="">
+        <img src="images/000044.png" class="thumbnail1 fade" alt="">
       </div>
   
         <div class="col-md-4">
-          <img src="images/000039.png" class="thumbnail1" alt="">
+          <img src="images/000039.png" class="thumbnail1 fade" alt="">
         </div>
   
         <div class="col-md-4">
 
-          <div class="col-md-6"><img src="images/000002.jpg" width="thumbnail1" alt=""></div>
-      <div class="col-md-6"><img src="images/000010.jpg" width="thumbnail1" alt=""></div>
+          <div class="col-md-6"><img src="images/000002.jpg" width="thumbnail2 fade" alt=""></div>
+      <div class="col-md-6"><img src="images/000010.jpg" width="thumbnail2 fade" alt=""></div>
         </div>
        
   </div>
@@ -411,7 +437,7 @@
     <h3>Design Render
     </h3>
     <div class="col-12">
-      <img src="images/000013.jpg" class="thumbnail1"></img>
+      <img src="images/000013.jpg" class="thumbnail1 fade"></img>
     </div>
    
 </div>
@@ -430,9 +456,7 @@
   </div>
   </div>
 
-  <br>
-  <br>
-  <div class="container-fluid main3 fade myclass" id="prototype">
+  <div class="container-fluid main3 myclass" id="prototype">
 
     <div class="text-center">
       <h1>PROTOTYPING &
@@ -456,16 +480,16 @@
            
     <div class="col-md-4">
       <h3>Wood & clay</h3>
-      <img src="images/000041.jpg" class="thumbnail1 img-2" alt="">
+      <img src="images/000041.jpg" class="thumbnail1 fade img-2" alt="">
     </div>
     <div class="col-md-4">
       <h3>metal</h3>
-      <img src="images/000019.jpg" class="thumbnail1 img-2" alt="">
+      <img src="images/000019.jpg" class="thumbnail1 fade img-2" alt="">
     </div>
     <div class="col-md-4">
       <h3>Cardboard / foam
       </h3>
-      <img src="images/000038.jpg" class="thumbnail1" alt="">
+      <img src="images/000038.jpg" class="thumbnail1 fade" alt="">
    
     </div>
         
@@ -474,19 +498,19 @@
       <div class="col-md-4">
         <h3>Cardboard / foam
         </h3>
-        <img src="images/000040.jpg" class="thumbnail1" alt="">
+        <img src="images/000040.jpg" class="thumbnail1 fade" alt="">
       </div>
       <div class="col-md-4">
         <h3>Functional prototypes
         </h3>
-        <img src="images/000027.jpg" class="thumbnail1" alt="">
+        <img src="images/000027.jpg" class="thumbnail1 fade" alt="">
   
       </div>
       <div class="col-md-4">
         <h3>Functional prototypes
         </h3>
       
-        <img src="images/000030.jpg" class="thumbnail1" alt="">
+        <img src="images/000030.jpg" class="thumbnail1 fade" alt="">
       </div>
        
   </div>
@@ -496,12 +520,12 @@
     <div class="col-md-4">
       <h3>Software & PCB
       </h3>
-      <img src="images/000001.jpg" class="thumbnail1 img-2" alt="">
+      <img src="images/000001.jpg" class="thumbnail1 fade img-2" alt="">
     </div>
     <div class="col-md-4">
       <h3>3d Printing
 </h3>
-      <img src="images/000029.jpg" class="thumbnail1 img-2" alt="">
+      <img src="images/000029.jpg" class="thumbnail1 fade img-2" alt="">
     </div>
    
 </div>
@@ -522,7 +546,7 @@
     
   </div>
 
-  <div class="container-fluid main3 fade myclass"  id="design">
+  <div class="container-fluid main3  myclass"  id="design">
     <div class="text-center">
       <h1>DESIGN THINKING 
         WORKSHOP
@@ -547,11 +571,11 @@
               </h3>
         
               <div class="col-md-6">
-              <img src="images/1.jpg" class="thumbnail2" alt="">
-              <img src="images/2.png" class="thumbnail2" alt="">
+              <img src="images/1.jpg" class="thumbnail2 fade" alt="">
+              <img src="images/2.png" class="thumbnail2 fade" alt="">
               </div>
               <div class="col-md-6">
-              <img src="images/3.jpg" class="img-2"  alt="">
+              <img src="images/3.jpg" class="img-2 fade"  alt="">
               </div>
             </div>
             <div class="col-md-6">
@@ -560,11 +584,11 @@
                 “Innovention
               </h3>
               <div class="col-md-6">
-              <img src="images/21.png" class="img-2" alt="">\
+              <img src="images/21.png" class="img-2 fade" alt="">\
               </div>
               <div class="col-md-6">
-              <img src="images/22.jpg" class="thumbnail2" alt="">
-              <img src="images/23.jpg" class="thumbnail2" alt="">
+              <img src="images/22.jpg" class="thumbnail2 fade" alt="">
+              <img src="images/23.jpg" class="thumbnail2 fade" alt="">
         </div>
         
             </div> 
@@ -579,7 +603,7 @@
         “Innotech” – Webinar series
         
       </h3>
-      <img src="images/31.jpg" class="img-2"></img>
+      <img src="images/31.jpg" class="img-2 fade"></img>
 
     </div>
    </div>
@@ -599,7 +623,7 @@
   </div>
   </div>
 
-  <div class="container-fluid main3 fade"  id="digital">
+  <div class="container-fluid main3 "  id="digital">
 
     <div class="text-center">
       <h1>DIGITAL 
@@ -614,16 +638,16 @@
 
       </h3>
         <div class="col-md-6 col-sm-12">
-      <img src="images/000004.jpg" alt="" class="thumbnail2">
-      <img src="images/000003.jpg" alt="" class="thumbnail2">
+      <img src="images/000004.jpg" alt="" class="thumbnail2 fade">
+      <img src="images/000003.jpg" alt="" class="thumbnail2 fade">
       </div>
       <div class="col-md-6 col-sm-12">
-      <img src="images/000022.jpg" alt="" class="thumbnail2">
-      <img src="images/000028.jpg" alt="" class="thumbnail2">
+      <img src="images/000022.jpg" alt="" class="thumbnail2 fade">
+      <img src="images/000028.jpg" alt="" class="thumbnail2 fade">
       </div>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-6 fade">
     <br><br><br> <br>
     <div style="background-color: rgb(0, 60, 128);">
     <br><br><br> <br>
@@ -635,14 +659,14 @@
   </div>
   
 
-  <div class="container-fluid main3 fade mt-5"  id="partner">
+  <div class="container-fluid main3  mt-5"  id="partner">
 
     <div class="text-center">
       <h1>PARTNER WITH US FOR
         TECHNOLOGY DEVELOPMENT
         </h1>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 fade">
       <ul>
         
           <h3> <li> Transfer of technology
@@ -671,7 +695,7 @@
       </ul>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-4 fade">
     <h1>Contact Us</h1>
       <h3>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@naugrahdesign.com" style="color: white;"> <span
@@ -680,7 +704,7 @@
   </div>
   </div>
 
-  <div class="container-fluid main3 fade mt-5"  id="team">
+  <div class="container-fluid main3  mt-5"  id="team">
 
     <div class="text-center">
       <h1>TEAM
@@ -693,7 +717,7 @@
     </div>
     <div class="col-md-8">
      <h1> Sumit Lakhera </h1>
-     <h3>
+     <h3 class="fade">
 Founder, designer & Managing Director <br>
 M.Des (Domus Academy – Milan, Italy) <br>
 B.Tech Mechanical
@@ -703,7 +727,7 @@ B.Tech Mechanical
 </h3>
     </div>
     
- <h3>Sumit Lakhera founded Naugrah Research & development after more than a decade of experience working in global automotive MNCs such as Mercedes Benz R&D India & Tata Motors Ltd and have worked in various technical areas of process planning, manufacturing engineering, digital manufacturing, 3dprinting, design & prototype building. <br> 
+ <h3 >Sumit Lakhera founded Naugrah Research & development after more than a decade of experience working in global automotive MNCs such as Mercedes Benz R&D India & Tata Motors Ltd and have worked in various technical areas of process planning, manufacturing engineering, digital manufacturing, 3dprinting, design & prototype building. <br> 
   Pursued Master in car and transportation design from Domus Academy, Milan Italy. Design, Prototyping and Manufacturing. experience in India, USA, Germany, Italy and China. <br>
   International 2nd prize award winner of ARPA-e LITECAR Design Challenge (USA), Ideator of the Year (2018) Mercedes Benz and Best Digital Manufacturing project (TATA Motors) <br>
   Worked for visionary projects such as Future of Manufacturing( Mercedes Benz R&D India), Future of Farming (CNH – industrial – New holland tractors, Italy), and has participated in several product design challenges in IDEX Defence, Agriculture, Environment and Automotive. <br>
@@ -718,16 +742,16 @@ B.Tech Mechanical
 </div>
 
 
-<div class="container-fluid main3 fade"  style="background-color:black">
+<div class="container-fluid main3 "  style="background-color:black">
   <br>
-  <div class="container">
+  <div class="container fade">
 <img src="images/rapid.png" class="rapid" width="1000px" alt="">
 </div>
 <br>
 </div>
 
 
-<div class="container-fluid main3 fade mt-5" >
+<div class="container-fluid main3  mt-5" >
 
   <div class="text-center">
     <h1>Our success stories & testimonials
@@ -735,7 +759,7 @@ B.Tech Mechanical
       </h1>
   </div>
   <div class="row">
-    <div class="col-md-6" style="background-image: url('images/000007.jpg');">
+    <div class="col-md-6 fade" style="background-image: url('images/000007.jpg');">
     <h1>
       ARIANO INSTRUMENTS PVT LTD
     </h1>
@@ -757,7 +781,7 @@ B.Tech Mechanical
     <br>
     <br>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 fade">
       <h1 class="text-center">SENSIO ENTERPRISES
       </h1>
       <ul>
@@ -781,7 +805,7 @@ B.Tech Mechanical
 </div>
 
 
-<div class="container-fluid main3 fade mt-5">
+<div class="container-fluid main3 mt-5">
 
   <div class="col-md-4">
     <h1>Address: 
