@@ -61,9 +61,13 @@ height: 400px;
     margin-bottom: 0;
     background-color: #000000;
     border: 0;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
     
+  }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: #08424d;
   }
   .navbar li a, .navbar .navbar-brand { 
     color: rgb(0, 251, 251) !important;
@@ -77,7 +81,7 @@ height: 400px;
   }
   .navbar-default .navbar-toggle {
     border-color: rgb(0, 251, 251);
-    color: #08424d;
+    background-color: #08424d;
   }
   .open .dropdown-toggle {
     color: #fff;
@@ -130,7 +134,13 @@ height: 400px;
   .mail{
     font-size: 16px;
   }
-  
+  .main3 h1{
+    font-family: 'Hind', sans-serif;
+    font-size: 20px;
+  }
+  .phil{
+    width: 80%  !important;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -173,11 +183,8 @@ height: 400px;
 
 
 .img-2{
+  width: 99%;
   height: 400px;
-}
-
-.max h1{
-  font-size: 75px!important;
 }
 
 .col-md-4 .col-md-6{  
@@ -186,8 +193,8 @@ height: 400px;
 
 .thumbnail1 {
   transition: 0.3s;
-  width: 400px;
-  height: 300px;
+  width: 320px;
+  height: 210px;
 }
 
 .thumbnail1:hover {
@@ -212,4 +219,11 @@ height: 400px;
 .thumbnail2{
   width: 350px;
   height: 200px;
+}
+.myclass{
+  width: 80%;
+}
+
+.phil{
+  width: 50%;
 }
