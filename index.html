@@ -33,6 +33,22 @@
     });
 
 
+    $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).addClass("slide1");}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+  
+
   </script>
 </head>
 <!-- NAVBAR WITH DRsOPDOWN -->
@@ -104,7 +120,7 @@
 
   </div>
   <div class="text-center">
-    <div class="container-fluid main3 ">
+    <div class="container-fluid main3 fade">
       <div class="col-md-6 main2">
         <h1> Who we are?</h1>
         <br>
@@ -136,7 +152,7 @@
     </div>
     <br>
 
-    <div class="container-fluid main3">
+    <div class="container-fluid main3 fade">
       <div class="text-center">
         <h1>Our Philosophy</span></h1>
       </div>
@@ -148,7 +164,7 @@
       <div class="col-md-6"> <img src="images/1.png" alt="" class="phil" ></div>
     </div>
   </div>
-  <div class="container-fluid main3">
+  <div class="container-fluid main3 fade">
     <div class="text-center">
       <h1><span>A creative blend of design,engineering & prototyping
       </h1>
@@ -196,7 +212,7 @@
   </div>
 
   
-  <div class="container-fluid main3">
+  <div class="container-fluid main3 fade">
 
     <div class="col-md-6">
 
@@ -220,7 +236,7 @@
   </div>
   <br><br><br>
 
-  <div class="container-fluid main3 text-center" id="why">
+  <div class="container-fluid main3 fade text-center" id="why">
     <div class="col-md-6 main2">
 
       <h1>Why us?
@@ -244,7 +260,7 @@
   <br>
   <br>
 
-  <div class="container-fluid main3 myclass"  id="3d">
+  <div class="container-fluid main3 fade myclass"  id="3d">
 
     <div class="text-center">
       <h1>3D PRINTING</h1>
@@ -323,7 +339,7 @@
 </div>
 
   </div>
-  <div class="container-fluid main3 text-center myclass" id="product">
+  <div class="container-fluid main3 fade text-center myclass" id="product">
 
     <div class="text-center">
       <h1>PRODUCT DESIGN</h1>
@@ -402,7 +418,7 @@
 
   <br>
   <br>
-  <div class="container-fluid main3 myclass" id="prototype">
+  <div class="container-fluid main3 fade myclass" id="prototype">
 
     <div class="text-center">
       <h1>PROTOTYPING &
@@ -492,7 +508,7 @@
     
   </div>
 
-  <div class="container-fluid main3 myclass"  id="design">
+  <div class="container-fluid main3 fade myclass"  id="design">
     <div class="text-center">
       <h1>DESIGN THINKING 
         WORKSHOP
@@ -569,7 +585,7 @@
   </div>
   </div>
 
-  <div class="container-fluid main3"  id="digital">
+  <div class="container-fluid main3 fade"  id="digital">
 
     <div class="text-center">
       <h1>DIGITAL 
@@ -605,7 +621,7 @@
   </div>
   
 
-  <div class="container-fluid main3 mt-5"  id="partner">
+  <div class="container-fluid main3 fade mt-5"  id="partner">
 
     <div class="text-center">
       <h1>PARTNER WITH US FOR
@@ -650,7 +666,7 @@
   </div>
   </div>
 
-  <div class="container-fluid main3 mt-5"  id="team">
+  <div class="container-fluid main3 fade mt-5"  id="team">
 
     <div class="text-center">
       <h1>TEAM
@@ -688,7 +704,7 @@ B.Tech Mechanical
 </div>
 
 
-<div class="container-fluid main3"  style="background-color:black">
+<div class="container-fluid main3 fade"  style="background-color:black">
   <br>
   <div class="container">
 <img src="images/rapid.png" class="rapid" width="1000px" alt="">
@@ -697,7 +713,7 @@ B.Tech Mechanical
 </div>
 
 
-<div class="container-fluid main3 mt-5" >
+<div class="container-fluid main3 fade mt-5" >
 
   <div class="text-center">
     <h1>Our success stories & testimonials
@@ -751,7 +767,7 @@ B.Tech Mechanical
 </div>
 
 
-<div class="container-fluid main3 mt-5">
+<div class="container-fluid main3 fade mt-5">
 
   <div class="col-md-4">
     <h1>Address: 
