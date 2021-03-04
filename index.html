@@ -93,6 +93,26 @@
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+ function counter(id, start, end, duration) {
+  let obj = document.getElementById(id),
+   current = start,
+   range = end - start,
+   increment = end > start ? 1 : -1,
+   step = Math.abs(Math.floor(duration / range)),
+   timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if (current == end) {
+     clearInterval(timer);
+    }
+   }, step);
+ }
+ counter("count1", 0, 15, 2000);
+ counter("count2", 100, 1000, 2000);
+ counter("count3", 0, 450, 3000);
+});
+
 
   </script>
 </head>
@@ -223,7 +243,7 @@
       <br>
       <br>
       <br>
-      <h3>We provide our expertise in preparation for mass production from MVP stage</h3>
+      <h3 class="fade">We provide our expertise in preparation for mass production from MVP stage</h3>
     </div>
     <div class="col-md-6 fade" style="background-image: url('images/bag3.jpg');">
       <h3>
@@ -323,29 +343,11 @@
       </h3>
     </div>
 
-      <div class="col-md-4">
-        <img src="images/000020.jpg" class="thumbnail1 fade" alt="">
-      </div>
-
-      <div class="col-md-4">
-        <img src="images/000016.jpg" class="thumbnail1 fade" alt="">
-      </div>
-      <h3>1:25 scale Size 150 mm x 150 mm
-        Total parts: 26 | total time: 12 hrs</h3>
-</div>
-  <div class="item">
-
-    <div class="col-md-4">
-      <img src="images/000005.jpg" class="thumbnail1 fade" alt="">
-      <h3 class="caption"> <br>
-        1:1 scale | Size 350 mm x 320 mm
-      </h3>
-    </div>
-    <div class="col-md-4" class="thumnail1">
+    <div class="col-md-4 fade">
 
       <h1 class="caption">
         We have done
-        1000+ hours
+        <span id="count2" ></span>+ hours
         Of 3d printing
 
       </h1>
@@ -354,6 +356,27 @@
 
       </h3>
     </div>
+
+
+    <div class="col-md-4">
+      <img src="images/000005.jpg" class="thumbnail1 fade" alt="">
+      <h3 class="caption"> <br>
+        1:1 scale | Size 350 mm x 320 mm
+      </h3>
+    </div>
+  
+        </div>
+  <div class="item">
+
+    <div class="col-md-4">
+      <img src="images/000020.jpg" class="thumbnail1 fade" alt="">
+    </div>
+
+    <div class="col-md-4">
+      <img src="images/000016.jpg" class="thumbnail1 fade" alt="">
+    </div>
+    <h3>1:25 scale Size 150 mm x 150 mm
+      Total parts: 26 | total time: 12 hrs</h3>
 
     <div class="col-md-4">
       <img src="images/Picture1.jpg" class="thumbnail1 fade" alt="">
@@ -734,8 +757,8 @@ B.Tech Mechanical
   </h3>
   </div>
 
-  <div class="col-md-4 text-center">
-    <h1>Our young team with 15+ years experience
+  <div class="col-md-4 text-center fade">
+    <h1>Our young team with <span id="count1" class="max"></span> + years experience
     </h1>
   </div>
   </div>
@@ -797,7 +820,7 @@ B.Tech Mechanical
     <div class="container text-center">
       <h1>Concept check plus Guard: 
       </h1>
-    <h3>designed and field prototype made ready in 9 months for COVID-19 & post covid
+    <h3 class="fade">designed and field prototype made ready in 9 months for COVID-19 & post covid
       <br>
       Inhouse concept design | software development | fabrication | prototype building | field trial 
       </h3>
